@@ -72,7 +72,7 @@ const getLinks = async ({
   let links = [];
   if (searchFormat.length) {
     links = await findLinks(
-      generateTemplateString(itemName, albumName, artistName, searchFormat),
+      searchFormat,
       type,
       exclusionFilters,
     );
